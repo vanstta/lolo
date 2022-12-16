@@ -1,0 +1,162 @@
+@import './global.css';
+
+.ColLeft, .ColRight {
+    display: flex;
+}
+.ColLeft {
+    width: 40%;
+}
+.ColLeftCard{
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ColLeftSeparator {
+    font-size: 3rem;
+    color: #ed1d24;
+    margin: 0 1.25rem;
+    font-weight: 700;
+}
+.ColLeftPercentage{
+    color: #ed1d24;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -5.5px;
+    text-align: center;
+}
+.ColLeftPercentageSymbol{
+    color: #ed1d24;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -2.75px;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+.ColLeftPercentageText{
+    color: #ed1d24;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.64px;
+    text-align: center;
+    top: -.85rem;
+    position: relative;
+}
+.ColRight{
+    width: 60%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+.ColRightCard{
+    display: flex;
+    flex-direction: column;
+}
+.ColRightImage{
+    width: 585px;
+}
+.ColRightTittle{
+    color: #515151;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -1.2px;
+    line-height: 32px;
+    margin: 0.5rem 0;
+}
+.ColRightText{
+    color: #515151;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.64px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.Image,
+.ImageCard {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 40em){
+    .ColLeftCard{
+        min-height: 120px;
+        padding: .5rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ColLeftSeparator {
+        font-size: 1rem;
+        margin: .5rem 0 0 0;
+        line-height: 1;
+    }
+    .ColLeftPercentage{
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: -2.75px;
+        line-height: 1;
+        text-align: center;
+        margin-right: 5px;
+    }
+    .ColLeftPercentageSymbol{
+        font-size: 20px;
+        margin-left: 0;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .ColLeftPercentageText{
+        font-size: 12px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: -0.64px;
+        text-align: center;
+        top: 0;
+    }
+    .ColRight{
+        padding: .25rem 0;
+    }
+    .ColRightCard{
+        padding-left: 1rem;
+        width: 100%;
+    }
+    .ColRightImage{
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+    }
+    .Image,
+    .ImageCard {
+        width: 60%;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .ColRightTittle{
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 16px;
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+    .ColRightText{
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 14px;
+        text-align: left;
+    }
+}
+

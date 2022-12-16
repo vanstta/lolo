@@ -1,0 +1,9 @@
+query GetPromos ($where: String, $account: String) {
+  documents(acronym: "BP", schema: "mdv1", fields: ["id", "title", "sub_title", "discount_percentage", "discounts_amount_installments", "discounts_text_installments", "discount_text_info", "img", "img_card", "order", "active_from", "active_to", "active", "validText", "hyper", "market", "ecommerce", "express", "maxi", "legal", "valid", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "idBank", "idCard"], where: $where, sort: "order ASC", account: $account, pageSize: 999)
+  @context(provider: "vtex.store-graphql"){
+    fields {
+      key
+      value
+    }
+  }
+}

@@ -1,0 +1,9 @@
+query GetBanks ($account: String){
+  documents(acronym: "FB", schema: "mdv1", fields: ["id", "image", "name"], sort: "name ASC", account: $account, pageSize: 999) 
+  @context(provider: "vtex.store-graphql"){
+    fields {
+      key
+      value
+    }
+  }
+}

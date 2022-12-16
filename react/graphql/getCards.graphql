@@ -1,0 +1,9 @@
+query GetCards ($account: String){
+  documents(acronym: "FC", schema: "mdv1", fields: ["id", "image", "name"], sort: "name ASC", account: $account, pageSize: 1200) 
+  @context(provider: "vtex.store-graphql"){
+    fields {
+      key
+      value
+    }
+  }
+}
